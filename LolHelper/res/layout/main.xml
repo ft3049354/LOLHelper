@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+	android:id="@+id/widget0"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+<ImageView
+	android:id="@+id/heroicon"
+	android:layout_width="80px"
+	android:layout_height="78px"
+	android:layout_x="140dp"
+	android:layout_y="180dp"
+	android:src="@drawable/index_hero"  />
+<ImageView
+	android:id="@+id/itemicon"
+	android:layout_width="80px"
+	android:layout_height="78px"
+	android:layout_x="80dp"
+	android:layout_y="90dp"
+	android:src="@drawable/index_item"  />
+<ImageView
+	android:id="@+id/emulicon"
+	android:layout_width="80px"
+	android:layout_height="78px"
+	android:layout_x="40dp"
+	android:layout_y="180dp"
+	android:src="@drawable/index_emul"  />
+<ImageView
+	android:id="@+id/rankicon"
+	android:layout_width="80px"
+	android:layout_height="78px"	
+	android:layout_x="200dp"
+	android:layout_y="270dp"
+	android:src="@drawable/index_rank"  />
+<ImageView
+	android:id="@+id/videoicon"
+	android:layout_width="80px"
+	android:layout_height="78px"
+	android:layout_x="240dp"
+	android:layout_y="180dp"
+	android:src="@drawable/index_video"  />
+<ImageView
+	android:id="@+id/mapicon"
+	android:layout_width="80px"
+	android:layout_height="78px"
+	android:layout_x="80dp"
+	android:layout_y="270dp"
+	android:src="@drawable/index_map"  />
+<ImageView
+	android:id="@+id/newsicon"
+	android:layout_width="80px"
+	android:layout_height="78px"
+	android:layout_x="200dp"
+	android:layout_y="90dp"
+	android:src="@drawable/index_news" />
+</AbsoluteLayout>
+
