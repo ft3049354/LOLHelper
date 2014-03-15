@@ -1,0 +1,1 @@
+Hello!This is the first readme.txt of LOLHelper!
