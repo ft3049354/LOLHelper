@@ -1,0 +1,1 @@
+This is a APP called LOLHelper.There are 3 contributer in it.It is a good Assistant for LOLHelper player to find infomations from Android devices.
