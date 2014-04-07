@@ -62,7 +62,10 @@ public class lolitem extends Activity{
 				//在本例中arg2=arg3  
 				HashMap<String, Object> item=(HashMap<String, Object>) arg0.getItemAtPosition(arg2);  
 				//显示所选Item的ItemText  
-				setTitle((String)item.get("ItemText"));  
+				setTitle((String)item.get("ItemText"));
+				Intent intent = new Intent(lolitem.this,LolHelperItemsDetailActivity.class);
+				intent.putExtra("item_name", "无尽之刃");//名字需要获取，这里暂写死，因为数据库中暂时我只加了一个
+				startActivity(intent);
 				Toast.makeText(lolitem.this, "Item"+item.get("ItemText"), Toast.LENGTH_SHORT).show();
 			}  
 		}); 

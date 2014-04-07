@@ -11,7 +11,11 @@
             android:name=".lolhelper"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.Holo.Light.NoActionBar.TranslucentDecor" >
-            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".lolitem"
@@ -20,11 +24,7 @@
         <activity
             android:name="com.lolhelper.activity.LolHelperItemsDetailActivity"
             android:theme="@android:style/Theme.Holo.Light.NoActionBar.TranslucentDecor" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            
         </activity>
     </application>
 
