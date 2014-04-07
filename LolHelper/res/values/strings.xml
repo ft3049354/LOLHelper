@@ -2,4 +2,5 @@
 <resources>
     <string name="hello">Hello World, lolhelper!</string>
     <string name="app_name">LOLHelper</string>
+    <string name="lolhelperitem">物品</string>
 </resources>

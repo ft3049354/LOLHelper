@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget32"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <ImageView
+            android:id="@+id/lolhelperback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/lolhelper_back_seletor" />
+
+        <TextView
+            android:id="@+id/lolhelperitemdetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/lolhelperitem"
+            android:textColor="@color/lolhelper_item_title_color"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/lolhelper_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/lolhelper_home_seletor" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image_line1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:src="@color/lolhelper_back_line" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/lolhelperitem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/lolhelper_back_seletor" />
+
+                    <TextView
+                        android:id="@+id/lolhelperitemname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="无尽之刃"
+                        android:textColor="@color/lolhelper_item_title_color"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:id="@+id/lolhelper"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/lolhelperitembuypricetitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:text="买价"
+                            android:textColor="@color/lolhelper_item_title_color"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/lolhelperitembuyprice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:layout_toRightOf="@+id/lolhelperitembuypricetitle"
+                            android:text="3555"
+                            android:textColor="@color/lolhelper_item_title_color"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/lolhelperitemsellpricetitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toRightOf="@+id/lolhelperitembuyprice"
+                            android:text="卖价"
+                            android:textColor="@color/lolhelper_item_title_color"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/lolhelperitemsellprice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:layout_toRightOf="@+id/lolhelperitemsellpricetitle"
+                            android:text="44"
+                            android:textColor="@color/lolhelper_item_title_color"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/lolhelper"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/lolhelperitemproperty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="属性"
+                            android:textColor="@color/lolhelper_item_title_color"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/lolhelperitempassivity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="被动"
+                            android:textColor="@color/lolhelper_item_title_color"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/lolhelperiteminitiative"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="主动"
+                            android:textColor="@color/lolhelper_item_title_color"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/image_line1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:src="@color/lolhelper_back_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/lolhelperitemcompose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="组件"
+                    android:textColor="@color/lolhelper_item_title_color"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:id="@+id/lolhelperitem1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp" >
+
+                        <ImageView
+                            android:id="@+id/lolhelperitemimage1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/lolhelper_back_seletor" />
+
+                        <TextView
+                            android:id="@+id/lolhelperitemtext1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/lolhelperitemimage1"
+                            android:layout_marginTop="10dp"
+                            android:text="text1"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/lolhelper_item_title_color"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/lolhelperitem2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp" >
+
+                        <ImageView
+                            android:id="@+id/lolhelperitemplus2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/lolhelper_back_seletor" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:layout_toRightOf="@id/lolhelperitemplus2" >
+
+                            <ImageView
+                                android:id="@+id/lolhelperitemimage2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/lolhelper_back_seletor" />
+
+                            <TextView
+                                android:id="@+id/lolhelperitemtext2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/lolhelperitemimage2"
+                                android:layout_marginTop="10dp"
+                                android:text="text2"
+                                android:textColor="@color/lolhelper_item_title_color"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/lolhelperitem3"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp" >
+
+                        <ImageView
+                            android:id="@+id/lolhelperitemplus3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/lolhelper_back_seletor" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:layout_toRightOf="@id/lolhelperitemplus3" >
+
+                            <ImageView
+                                android:id="@+id/lolhelperitemimage3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/lolhelper_back_seletor" />
+
+                            <TextView
+                                android:id="@+id/lolhelperitemtext3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/lolhelperitemimage3"
+                                android:layout_marginTop="10dp"
+                                android:text="text2"
+                                android:textColor="@color/lolhelper_item_title_color"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/lolhelperitem4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp" >
+
+                        <ImageView
+                            android:id="@+id/lolhelperitemplus4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/lolhelper_back_seletor" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@id/lolhelperitemplus4" >
+
+                            <ImageView
+                                android:id="@+id/lolhelperitemimage4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/lolhelper_back_seletor" />
+
+                            <TextView
+                                android:id="@+id/lolhelperitemtext4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/lolhelperitemimage4"
+                                android:layout_marginTop="10dp"
+                                android:text="text2"
+                                android:textColor="@color/lolhelper_item_title_color"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/image_line2"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:src="@color/lolhelper_back_line" />
+
+            <RelativeLayout
+                android:id="@+id/lolhelpercomposeitem"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
+
+                <TextView
+                    android:id="@+id/lolhelpercomposeitemtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="可合成物品"
+                    android:textColor="@color/lolhelper_item_title_color"
+                    android:textSize="15sp" />
+
+                <GridView
+                    android:id="@+id/gridView"
+                    android:layout_below="@id/lolhelpercomposeitemtext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="4" >
+                </GridView>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -3,7 +3,10 @@ package com.lolhelper;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import com.lolhelper.activity.LolHelperItemsDetailActivity;
+
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -47,7 +50,7 @@ public class lolitem extends Activity{
 				//在本例中arg2=arg3  
 				HashMap<String, Object> item=(HashMap<String, Object>) arg0.getItemAtPosition(arg2);  
 				//显示所选Item的ItemText  
-				setTitle((String)item.get("ItemText"));  
+				setTitle((String)item.get("ItemText")); 
 			}  
 		}); 
 
