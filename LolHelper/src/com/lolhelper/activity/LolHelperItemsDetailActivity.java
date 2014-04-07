@@ -83,7 +83,7 @@ public class LolHelperItemsDetailActivity extends Activity
         LolDBExtra.initLolExtra(this);
         Intent intent = getIntent();
         item_name = intent.getStringExtra("item_name");
-        item_name = "无尽之刃";
+        //item_name = "无尽之刃";
         refreshList(item_name);
         init();
 
